@@ -30,5 +30,6 @@ using (RNGCryptoServiceProvider rg = new RNGCryptoServiceProvider())
   rg.GetBytes(rno);    
   int randomvalue = BitConverter.ToInt32(rno, 0); 
 }
-
 ```
+
+*FROM A PERFORMANCE POINT OF VIEW:* using the "Random" class is better because the SEED calculation is way simpler, unlike the SECURE random number where it gets input from outside sources.
