@@ -18,12 +18,12 @@ Now if a SEED is easy to guess then those kind of random numbers are termed as *
 ![alt text](https://i.stack.imgur.com/JJ93T.png)
 
 Random class takes seed values from your CPU clock which is very much predictable. So in other words RANDOM class of C# generates pseudo random numbers , below is the code for the same.
-```
+```C#
 Random rnd= new Random();
 int rndnumber = rnd.Next()
 ```
 While the RNGCryptoServiceProvider class uses OS entropy to generate seeds. OS entropy is a random value which is generated using sound , mouse click and keyboard timings , thermal temp etc. Below goes the code for the same.
-```
+```C#
 using (RNGCryptoServiceProvider rg = new RNGCryptoServiceProvider()) 
 { 
   byte[] rno = new byte[5];    
