@@ -21,7 +21,7 @@ Random class takes seed values from your CPU clock which is very much predictabl
 ```
 Random rnd= new Random();
 int rndnumber = rnd.Next()
-´´´
+```
 While the RNGCryptoServiceProvider class uses OS entropy to generate seeds. OS entropy is a random value which is generated using sound , mouse click and keyboard timings , thermal temp etc. Below goes the code for the same.
 ```
 using (RNGCryptoServiceProvider rg = new RNGCryptoServiceProvider()) 
@@ -30,4 +30,4 @@ using (RNGCryptoServiceProvider rg = new RNGCryptoServiceProvider())
   rg.GetBytes(rno);    
   int randomvalue = BitConverter.ToInt32(rno, 0); 
 }
-´´´
+```
