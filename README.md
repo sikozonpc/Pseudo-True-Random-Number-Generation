@@ -1,7 +1,7 @@
 # Pseudo-True-Random-Number-Generation
 Breif explaination about how numbers are generated in a computer.
 
-Well, it looks like a very simple theme, but most of the work in this process is handled by the method or class you are using , for instance, the "Random" class in C# uses something similar to what i am about to explain.
+Well, it looks like a very simple theme, but most of the work in this process is handled by the method or class you are using , for instance, the "Random" class in C# uses something similar to what I am about to explain.
 
 First thing, what is randomness. When we tell a person to choose a number between 1 and 10 what happens internally? What makes a person choose 3 or 8 or 10?
 
@@ -34,4 +34,4 @@ using (RNGCryptoServiceProvider rg = new RNGCryptoServiceProvider())
 
 *FROM A PERFORMANCE POINT OF VIEW:* using the "Random" class is better because the SEED calculation is way simpler, unlike the SECURE random number where it gets input from outside sources.
 
-Something more, I also want to talk about the GUID class from .NET, it creates a *UNIQUE key/number* that can receive alot of arguments to specify your needs.
+Something more I want to talk about the GUID class from .NET, it creates a *UNIQUE key/number* that can receive alot of arguments to specify your needs.
